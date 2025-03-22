@@ -37,7 +37,7 @@
                 &kp LSHFT         &kp Z            &kp X      &kp C      &kp V      &kp B                             &kp N      &kp M          &kp COMMA  &kp DOT    &kp FSLH   &kp ESC     &kp ESC      &kp CLS_TAB  &mo 1          &kp C_PP
                                                               &kp SPACE  &mo 2      &kp LALT                          &kp BSPC   &mo 3          &kp LGUI
             >;
-            sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp LEFT RIGHT>;
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp RIGHT LEFT>;
         };
         MAC {
             bindings = <
@@ -46,7 +46,7 @@
                 &kp LSHFT         &kp Z            &kp X      &kp C      &kp V      &kp B                             &kp N      &kp M          &kp COMMA  &kp DOT    &kp FSLH   &kp LGUI    &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &kp DSCD_MT
                                                               &kp SPACE  &mo 4      &kp LGUI                          &kp BSPC   &mo 5          &kp LALT
             >;
-            sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp LEFT RIGHT>;
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp RIGHT LEFT>;
         };
         NUM {
             bindings = <
@@ -55,7 +55,7 @@
                 &kp LSHFT         &kp N0           &kp N1     &kp N2     &kp N3     &to 1                             &none      &kp F1         &kp F2     &kp F3     &kp F4     &kp ESC     &kp ESC      &kp CLS_TAB  &mo 1          &kp C_PP
                                                               &kp SPACE  &mo 0      &kp LALT                          &kp BSPC   &mo 3          &kp LGUI
             >;
-            sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp LEFT RIGHT>;
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp RIGHT LEFT>;
         };
         SYM {
             bindings = <
@@ -64,7 +64,7 @@
                 &kp LSHFT         &kp UNDER        &kp PLUS   &kp LT     &kp GT     &none                             &none      &kp LG(LS(S))  &none      &none      &none     &kp ESC     &kp ESC      &kp CLS_TAB  &mo 1          &kp C_PP
                                                               &kp SPACE  &mo 2      &kp LALT                          &kp BSPC   &mo 0          &kp LGUI
             >;
-            sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp LEFT RIGHT>;
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp RIGHT LEFT>;
         };
         MNUM {
             bindings = <
@@ -73,7 +73,7 @@
                 &kp LSHFT         &kp N0           &kp N1     &kp N2     &kp N3     &to 0                             &none      &kp F1         &kp F2     &kp F3     &kp F4     &kp ESC     &kp ESC      &kp CLS_TAB  &mo 1          &kp C_PP
                                                               &kp SPACE  &mo 1      &kp LGUI                          &kp BSPC   &mo 5          &kp LALT
             >;
-            sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp LEFT RIGHT>;
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp RIGHT LEFT>;
         };
         MSYM {
             bindings = <
@@ -82,7 +82,7 @@
                 &kp LSHFT         &kp UNDER        &kp PLUS   &kp LT     &kp GT     &none                             &none      &kp LG(LS(4))  &none      &none      &none     &kp ESC     &kp ESC      &kp CLS_TAB  &mo 1          &kp C_PP
                                                               &kp SPACE  &mo 4      &kp LGUI                          &kp BSPC   &mo 1          &kp LALT
             >;
-            sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp LEFT RIGHT>;
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp RIGHT LEFT>;
 
        };
     };
