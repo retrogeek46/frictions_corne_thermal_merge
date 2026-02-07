@@ -27,4 +27,26 @@
       ;
 
     };
+
+    /* Bit-banged SPI for nice!view on free pins */
+    niceview_spi: niceview_spi {
+        compatible = "zmk,gpio-spi";
+        #address-cells = <1>;
+        #size-cells = <0>;
+        mosi-gpios = <&xiao_d 4 GPIO_ACTIVE_HIGH>;  /* MOSI on D4 */
+        clk-gpios = <&xiao_d 5 GPIO_ACTIVE_HIGH>;   /* SCK on D5 */
+        cs-gpios = <&gpio0 9 GPIO_ACTIVE_HIGH>;     /* CS on P0.09 (NFC pin) */
+
+        nice_view: ls0xx@0 {
+            compatible = "sharp,ls0xx";
+            spi-max-frequency = <1000000>;
+            reg = <0>;
+            width = <160>;
+            height = <68>;
+        };
+    };
+
+    chosen {
+        zephyr,display = &nice_view;
+    };
 };
