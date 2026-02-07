@@ -93,8 +93,6 @@
                                                               &kp SPACE  &mo 4      &kp LGUI                          &kp BSPC   &mo 1          &kp LALT
             >;
             sensor-bindings = <&inc_dec_kp RIGHT LEFT &scroll_encoder SCRL_DOWN SCRL_UP>;
-
        };
     };
-
 };

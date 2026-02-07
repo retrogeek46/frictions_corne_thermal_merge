@@ -28,22 +28,3 @@
 
     };
 };
-
-&xiao_spi {
-    status = "okay";
-    cs-gpios = <&xiao_d 4 GPIO_ACTIVE_HIGH>;
-
-    nice_view: ls0xx@0 {
-        compatible = "sharp,ls0xx";
-        spi-max-frequency = <1000000>;
-        reg = <0>;
-        width = <160>;
-        height = <68>;
-    };
-};
-
-/ {
-    chosen {
-        zephyr,display = &nice_view;
-    };
-};
