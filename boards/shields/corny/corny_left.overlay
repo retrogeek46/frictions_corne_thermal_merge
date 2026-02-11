@@ -4,14 +4,14 @@
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
-            psels = <NRF_PSEL(SPIM_SCK, 0, 9)>,    /* P0.09 (NFC) */
-                    <NRF_PSEL(SPIM_MOSI, 0, 5)>;   /* D5 / P0.05 */
+            psels = <NRF_PSEL(SPIM_SCK, 0, 5)>,   /* D5 / P0.05 */
+                    <NRF_PSEL(SPIM_MOSI, 0, 4)>;   /* D4 / P0.04 */
         };
     };
     spi0_sleep: spi0_sleep {
         group1 {
-            psels = <NRF_PSEL(SPIM_SCK, 0, 9)>,
-                    <NRF_PSEL(SPIM_MOSI, 0, 5)>;
+            psels = <NRF_PSEL(SPIM_SCK, 0, 5)>,
+                    <NRF_PSEL(SPIM_MOSI, 0, 4)>;
             low-power-enable;
         };
     };
@@ -22,7 +22,7 @@ nice_view_spi: &spi0 {
     pinctrl-0 = <&spi0_default>;
     pinctrl-1 = <&spi0_sleep>;
     pinctrl-names = "default", "sleep";
-    cs-gpios = <&gpio0 4 GPIO_ACTIVE_HIGH>;   /* D4 / P0.04 */
+    cs-gpios = <&gpio0 9 GPIO_ACTIVE_HIGH>;   /* P0.09 (NFC pad) */
 };
 
 / {
